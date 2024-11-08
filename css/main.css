@@ -306,7 +306,49 @@ body {
     transition: color 0.3s ease;
 }
 
+.blackCurtain {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    display: none;
+}
 
+.loginContainer {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginContainer form {
+    text-align: center;
+}
+
+.loginContainer label, input {
+    font-size: 22px;
+}
+
+.loginContainer button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffc400;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
 
 
 

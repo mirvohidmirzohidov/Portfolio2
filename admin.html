@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="navIcon" src="images.jpeg" alt="">
+        <ul class="navbarLinksWrapper">
+            <li class="navItem"><a class="navLink active" href="index.html">Home</a></li>
+            <li class="navItem"><a class="navLink" href="#">Works</a></li>
+            <li class="navItem"><a class="navLink" href="about.html">About</a></li>
+            <li class="navItem"><a class="navLink" href="#">Blog</a></li>
+            <li class="navItem"><a class="navLink" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="logIn">Login</button>
+    </div>
+
+
+    <!-- <div class="admin-panel">
+        <div class="admin-home">
+            <h2>Edit Home Page</h2>
+            <form action="update-home.php" method="POST">
+                <label for="homeTitle">Home Title:</label>
+                <input type="text" id="homeTitle" name="homeTitle" value="Hi! I'm Mirvohid Mirzohidov">
+                
+                <label for="homeSpecialization">Specializations:</label>
+                <textarea id="homeSpecialization" name="homeSpecialization">Web Development, Responsive Web Design, Interactive User Interfaces</textarea>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="admin-about">
+            <h2>Edit About Page</h2>
+            <form action="update-about.php" method="POST">
+                <label for="aboutText">About Text:</label>
+                <textarea id="aboutText" name="aboutText">Men Mirvohid Mirzohidov, 2007-yil 12-sentyabrda Toshkent viloyati Parkent tumanida tug‘ilganman...</textarea>
+                
+                <label for="technologies">Technologies:</label>
+                <textarea id="technologies" name="technologies">HTML, CSS, JavaScript, Bootstrap, React</textarea>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="admin-contact">
+            <h2>Edit Contact Page</h2>
+            <form action="update-contact.php" method="POST">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" value="+998 94 306 16 81">
+
+                <label for="telegram">Telegram:</label>
+                <input type="text" id="telegram" name="telegram" value="https://t.me/mirvohid_s">
+
+                <label for="instagram">Instagram:</label>
+                <input type="text" id="instagram" name="instagram" value="https://instagram.com/mirvohid2412">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="mirvohidmirzohidov25@gmail.com">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div> -->
+
+
+    <div class="admin-panel">
+        <div class="admin-home">
+            <h2>Edit Home Page</h2>
+            <form>
+                <label for="homeTitle">Home Title:</label>
+                <input type="text" id="homeTitle" name="homeTitle"
+                    value="Hi! I'm Mirvohid Mirzohidov a web developer born in 2007">
+
+                <label for="specialization1">specialization1</label>
+                <input type="text" class="specialization1" value="Web Development">
+
+                <label for="specialization1">specialization2</label>
+                <input type="text" class="specialization2" value="Responsive Web Design">
+
+                <label for="specialization1">specialization3</label>
+                <input type="text" class="specialization3" value="Interactive User Interfaces">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/admin.js"></script>
+</html>

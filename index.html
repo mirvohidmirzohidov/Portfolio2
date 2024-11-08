@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mirvohid - home</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+    <div class="blackCurtain">
+        <div class="loginContainer">
+            <h1>Login to admin panel</h1>
+            <form id="loginForm" action="">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required> <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
 
     <div class="navbar">
         <img class="navIcon" src="images.jpeg" alt="">
@@ -23,7 +37,7 @@
     </div>
 
     <div class="briefInformation">
-        <h1>Hi! I'm <span class="name">Mirvohid Mirzohidov</span>, <br> a web developer born in 2007</h1>
+        <h1 class="briefInformationTitle">Hi! I'm <span class="name">Mirvohid Mirzohidov</span>, <br> a web developer born in 2007</h1>
         <div class="specializing">
             <div>Specializing in</div>
             <div class="specializingItem1">Web Development</div>
@@ -31,15 +45,16 @@
             <div class="specializingItem3">Interactive User Interfaces</div>
         </div>
         <div class="buttons">
-            <a href="" class="learnMoreButton">Learn more</a>
-            <a href="" class="contactsButton">Contact</a>
+            <a href="about.html" class="learnMoreButton">Learn more</a>
+            <a href="contact.html" class="contactsButton">Contact</a>
         </div>
-    </div>~
+    </div>
 
 
 
 
 </body>
+<script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 
 </html>
