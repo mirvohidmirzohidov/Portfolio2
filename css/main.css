@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1b1b1b;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #212529;
+    border-bottom: 1px solid rgb(191, 196, 200);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 50px;
+    position: relative;
+    animation: navbarAnimation 1s ease-out forwards;
+}
+
+.navIcon {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+.navbarLinksWrapper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navLink {
+    color: rgb(191, 196, 200);
+    font-size: 17px;
+}
+
+.active {
+    color: white;
+    font-size: 20px;
+}
+
+.logIn {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcc00;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+}
+
+.briefInformation {
+    width: 65%;
+    margin-top: 220px;
+    margin-left: 130px;
+
+}
+
+.briefInformation h1 {
+    color: white;
+    font-size: 70px;
+    animation: leftAnimation 1s ease-out forwards;
+}
+
+.name {
+    color: #FFD700;
+}
+
+.specializing {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    animation: rightAnimation 1s ease forwards;
+}
+
+.specializing div:first-child {
+    color: rgb(191, 196, 200);
+}
+
+.specializingItem1 {
+    width: 200px;
+    height: 35px;
+    background-color: #FFC107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.specializingItem2 {
+    width: 250px;
+    height: 35px;
+    background-color: #0DCAF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: white;
+}
+
+.specializingItem3 {
+    width: 250px;
+    height: 35px;
+    background-color: #198754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+    animation: leftAnimation 0.7s ease forwards;
+}
+
+.learnMoreButton {
+    display: inline-block;
+    width: 140px;
+    height: 55px;
+    background-color: #ffe02d;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+.contactsButton {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease background-color;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.contactsButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.myImage {
+    width: 400px;
+    border-radius: 50%;
+    animation: leftAnimation 1s ease forwards;
+}
+
+.aboutWrapper {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    margin: 50px auto;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: rightAnimation 1s ease forwards;
+    font-size: 22px;
+}
+
+.aboutTitle {
+    margin-bottom: 20px;
+    font-size: 50px;
+    animation: rightAnimation 0.6s ease forwards;
+}
+
+.information {
+    animation: rightAnimation 0.8s ease forwards;
+}
+
+.information2 {
+    animation: rightAnimation 1.3s ease forwards;
+}
+
+.myTechnologies {
+    margin-top: 22px;
+    animation: rightAnimation 0.9s ease forwards;
+}
+
+.technologiesList {
+    font-weight: 600;
+    margin: 0 30px;
+    margin-bottom: 20px;
+    animation: rightAnimation 1.1s ease forwards;
+}
+
+.downloadButton {
+    width: 220px;
+    height: 50px;
+    background-color: #0066ff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    animation: buttonAnimation 1.5s ease forwards;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    margin-top: 120px;
+}
+
+.contact-section h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    --translateX: -40%;
+    animation: leftAnimation 1s ease forwards;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.contact-info li:nth-child(1),
+.contact-info li:nth-child(2) {
+    animation: rightAnimation 1s ease forwards;
+}
+
+.contact-info li:nth-child(3),
+.contact-info li:nth-child(4) {
+    animation: leftAnimation 1s ease forwards;
+}
+
+.contact-info li {
+    width: 400px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.contact-info a {
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact-info i {
+    font-size: 1.5rem;
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+@keyframes navbarAnimation {
+    0% {
+        top: -75px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes leftAnimation {
+    0% {
+        transform: translateX(var(--translateX, -100%));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightAnimation {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
